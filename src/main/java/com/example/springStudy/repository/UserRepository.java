@@ -20,13 +20,6 @@ public class UserRepository implements UserRepositoryInterFace{
     }
 
     @Override
-    public Optional<User> findOverlapEmail(String email) {
-        return storeUser.values()
-                .stream()
-                .filter(user -> user.getEmail().equals(email))
-                .findAny();
-    }
-    @Override
     public String findPassword(String email) {
         return storeUser.get(email).getPassword();
     }
