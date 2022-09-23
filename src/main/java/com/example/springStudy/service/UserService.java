@@ -19,7 +19,7 @@ public class UserService {
     public String findPassword(String email){
         return userRepository.findPassword(email);
     }
-    public List<User> FindAllUser(){
+    public List<User> findAllUser(){
         return userRepository.findAll();
     }
 

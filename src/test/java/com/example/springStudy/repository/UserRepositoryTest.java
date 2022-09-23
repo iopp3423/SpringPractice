@@ -26,7 +26,7 @@ class UserRepositoryTest {
     }
 
     @Test
-    void findByEmail() {
+    void z() {
         User user = new User();
         user.setEmail("test123");
         user.setName("김테스트");
